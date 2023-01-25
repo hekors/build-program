@@ -1,3 +1,5 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("@/components/UIComponents/Button/button-styles.module.css");

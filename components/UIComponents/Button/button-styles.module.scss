@@ -1,0 +1,25 @@
+
+.bp-button {
+    @apply flex flex-row items-center justify-center transition-all;
+}
+
+.bp-button-size {
+    &-small {
+        @apply px-3 py-1.5 rounded font-medium text-sm;
+    }
+    &-medium {
+        @apply px-5 py-2.5 rounded-md font-medium text-base;
+    }
+    &-large {
+        @apply px-7 py-3 rounded-lg font-semibold text-lg;
+    }
+}
+
+.bp-button-variant {
+    &-solid {
+        @apply bg-gray-800 text-white hover:bg-gray-700;
+    }
+    &-text {
+        @apply bg-transparent text-gray-500 hover:bg-gray-100;
+    }
+}

@@ -1,3 +1,4 @@
+import Button from "@/components/UIComponents/Button";
 
 const LandingPage: React.FunctionComponent = () => {
   return (
