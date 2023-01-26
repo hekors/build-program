@@ -21,7 +21,7 @@ const Navbar: React.FunctionComponent = () => {
                             height={"20"}
                             alt="bag"
                         />
-                        <WrappedContainer className="text-white hover:text-gray-400">{"Build Program"}</WrappedContainer>
+                        <span className="text-white hover:text-gray-400">{"Build Program"}</span>
                     </Paragraph>
                 </Link>
                 <Container className="flex flex-row items-center justify-end gap-6">

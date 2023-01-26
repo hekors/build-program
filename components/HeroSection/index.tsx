@@ -12,7 +12,7 @@ const HeroSection: React.FunctionComponent = (props: any) => {
                 <Link href={"https://hekors.tech"} target="_blank">
                     <Paragraph className="mb-6">{"By HEKORS Community"}</Paragraph>
                 </Link>
-                <Headline className="text-8xl text-left font-extrabold flex flex-col items-center justify-start w-[20ch] text-gray-50">
+                <Headline className="text-8xl text-left font-extrabold flex flex-col items-center justify-start w-[20ch] text-white">
                     {"Learn by building beautiful things."}
                 </Headline>
                 <Container className="flex flex-row items-center justify-start gap-6 my-12">

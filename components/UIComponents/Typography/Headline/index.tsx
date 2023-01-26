@@ -2,14 +2,13 @@ import { HeadlineType } from "@/types/UIComponentTypes/typography-types";
 
 const Headline: React.FunctionComponent<HeadlineType> = ({
     children,
-    size="lg",
     style,
-    className,
+    className="",
     id,
 }, props: any) => {
     return (
         <h1
-            className={`text-${size} text-gray-900 ${className || ""}`}
+            className={` ${className}`}
             style={style}
             id={id}
             {...props}
