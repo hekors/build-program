@@ -22,7 +22,7 @@ const ProgramTimelineElement: React.FunctionComponent<ProgramTimelineElementType
             <Container className="program-timeline-element__header-layer-wrapper absolute 
                 flex flex-row items-stretch justify-start gap-4 -top-16 -left-10"
             >
-                {emoji && <WrappedContainer className="program-timeline-element__emoji-box select-none cursor-default bg-white p-4 rounded-xl border border-gray-200 shadow-md">
+                {emoji && <WrappedContainer className="program-timeline-element__emoji-box select-none cursor-default bg-white p-4 rounded-xl border border-gray-200 shadow-md hover:shadow-sm">
                     <Image 
                         src={`/ios-emojis/${emoji}.svg`}
                         width="40"
