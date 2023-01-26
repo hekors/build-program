@@ -3,3 +3,12 @@
 @tailwind utilities;
 
 @import url("@/components/UIComponents/Button/button-styles.module.css");
+
+body, html {
+    @apply bg-gray-100;
+}
+
+.content-view-container {
+    max-width: 1200px;
+    @apply mx-auto;
+}
