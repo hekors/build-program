@@ -9,7 +9,7 @@ const SectionContainer: React.FunctionComponent<GenericComponentType> = ({
     return (
         <section className="section-container py-16">
             <div
-                className={`section-content-container w- ${className || ""}`}
+                className={`section-content-container ${className || ""}`}
                 style={style}
                 id={id}
                 {...props}

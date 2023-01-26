@@ -9,7 +9,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "mona-sans": ["Mona Sans", "sans-serif"]
+      }
+    },
   },
   plugins: [],
 }

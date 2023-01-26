@@ -5,10 +5,15 @@
 @import url("@/components/UIComponents/Button/button-styles.module.css");
 
 body, html {
-    @apply bg-gray-100;
+    @apply bg-gray-100 font-mona-sans;
 }
 
-.content-view-container {
+.section-content-container {
     max-width: 1200px;
     @apply mx-auto;
+}
+
+@font-face {
+    font-family: "Mona Sans";
+    src: url("../public/fonts/Mona-Sans.ttf");
 }

@@ -1,10 +1,10 @@
 import { CSSProperties, HTMLAttributeAnchorTarget, ReactNode } from "react";
 
 type ButtonType = {
-    children: ReactNode;
+    children: ReactNode | string;
     size?: "small" | "medium" | "large";
-    variant?: "solid" | "text";
-    type?: "button" | "link";
+    variant?: "solid" | "text" | string;
+    type?: "button" | "link" | null;
     className?: string;
     style?: CSSProperties;
     id?: string;

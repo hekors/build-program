@@ -1,9 +1,25 @@
-import { SectionContainer } from "../UIComponents/Container/SectionContainer";
+import { useRef } from "react";
+import { SectionContainer } from "@/components/UIComponents/Container/SectionContainer";
+import ProgramTimelineData from "@/components/ProgramTimelineSection/ProgramTimelineData.json";
+import ProgramTimelineElement from "@/components/ProgramTimelineSection/ProgramTimelineElement";
 
 const ProgramTimelineSection: React.FunctionComponent = ({}) => {
+    const ProgramTimelineDataRef = useRef(ProgramTimelineData);
     return (
         <SectionContainer id="program-timeline">
-            
+            {ProgramTimelineDataRef.current?.map((timelineElement, timelineIndex: number) => {
+                return (
+                    <ProgramTimelineElement
+                        emoji={timelineElement?.emoji}
+                        headline={timelineElement?.headline}
+                        description={timelineElement?.description}
+                        displayURL={timelineElement?.displayURL}
+                        displayURLPath={timelineElement?.displayURLPath}
+                        timelineAction={timelineElement?.timelineAction}
+                        key={timelineIndex}
+                    />
+                )
+            })}
         </SectionContainer>
     )
 };

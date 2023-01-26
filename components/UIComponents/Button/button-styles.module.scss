@@ -17,9 +17,9 @@
 
 .bp-button-variant {
     &-solid {
-        @apply bg-gray-800 text-white hover:bg-gray-700;
+        @apply bg-gray-900 text-white hover:bg-gray-800;
     }
     &-text {
-        @apply bg-transparent text-gray-500 hover:bg-gray-100;
+        @apply bg-transparent text-gray-500 hover:bg-gray-200;
     }
 }
