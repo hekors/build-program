@@ -1,4 +1,4 @@
-import { HTMLAttributeAnchorTarget, ReactNode } from "react";
+import { CSSProperties, HTMLAttributeAnchorTarget, ReactNode } from "react";
 
 type ButtonType = {
     children: ReactNode;
@@ -6,6 +6,7 @@ type ButtonType = {
     variant?: "solid" | "text";
     type?: "button" | "link";
     className?: string;
+    style?: CSSProperties;
     id?: string;
     onClick?: function;
     link?: {

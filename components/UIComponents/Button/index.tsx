@@ -7,6 +7,7 @@ const Button: React.FunctionComponent<ButtonType> = ({
     variant="solid",
     type="button",
     className="",
+    style,
     id,
     onClick,
     link
@@ -20,6 +21,7 @@ const Button: React.FunctionComponent<ButtonType> = ({
                     id={id}
                     type={type}
                     onClick={onClick}
+                    style={style}
                     {...props}
                 >
                     {children}
@@ -34,6 +36,7 @@ const Button: React.FunctionComponent<ButtonType> = ({
                     id={id}
                     type={type}
                     onClick={onClick}
+                    style={style}
                     {...props}
                 >
                     {children}
@@ -47,6 +50,7 @@ const Button: React.FunctionComponent<ButtonType> = ({
                 id={id}
                 type={type}
                 onClick={onClick}
+                style={style}
                 {...props}
             >
                 {children}
