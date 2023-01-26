@@ -6,10 +6,10 @@ type ProgramTimelineElementType = {
     description: string;
     displayURL: string;
     displayURLPath: string;
-    timelineAction?: {
+    timelineAction: Array<{
         children: string;
         variant: string;
-    }[];
+    }>;
 };
 
 export type { ProgramTimelineElementType };
