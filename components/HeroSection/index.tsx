@@ -10,7 +10,7 @@ const HeroSection: React.FunctionComponent = (props: any) => {
         <Container className="hero-section pt-36 pb-12 bg-gray-900 relative" id="hero-section" {...props}>
             <SectionContainer className="hero-section-content">
                 <Link href={"https://hekors.tech"} target="_blank">
-                    <Paragraph className="mb-6">{"By HEKORS Community"}</Paragraph>
+                    <Paragraph className="mb-6">{"An initiative by HEKORS Community"}</Paragraph>
                 </Link>
                 <Headline className="text-8xl text-left font-extrabold flex flex-col items-center justify-start w-[20ch] text-white">
                     {"Learn by building beautiful things."}
