@@ -1,0 +1,42 @@
+import Container from "@/components/UIComponents/Container";
+import Image from "next/image";
+import { WrappedContainer } from "@/components/UIComponents/Container/WrappedContainer";
+import Paragraph from "@/components/UIComponents/Typography/Paragraph";
+import Link from "next/link";
+import NavbarData from '@/components/Navbar/NavbarData.json';
+import { useRef } from "react";
+import Button from "@/components/UIComponents/Button";
+
+const Navbar: React.FunctionComponent = () => {
+    const NavbarDataRef = useRef(NavbarData);
+
+    return (
+        <Container className="navbar bg-gray-900 py-12" id="navbar">
+            <Container className="navbar-content-container section-content-container flex flex-row items-center justify-between">
+                <Link href={"/"}>
+                    <Paragraph className="build-program-logo-wrapper flex flex-row items-start justify-start gap-1">
+                        <Image 
+                            src={'/ios-emojis/school-bag.svg'}
+                            width={"20"}
+                            height={"20"}
+                            alt="bag"
+                        />
+                        <WrappedContainer className="text-white hover:text-gray-400">{"Build Program"}</WrappedContainer>
+                    </Paragraph>
+                </Link>
+                <Container className="flex flex-row items-center justify-end gap-6">
+                    {NavbarDataRef.current?.map((navbarOption, navbarOptionIndex) => (
+                        <Link href={navbarOption?.path} key={navbarOptionIndex}>
+                            <Paragraph className="hover:text-gray-400">{navbarOption?.title}</Paragraph>
+                        </Link>
+                    ))}
+                    <Button className="bg-white text-gray-900 hover:bg-gray-200">
+                        {"Apply Now"}
+                    </Button>
+                </Container>
+            </Container>
+        </Container>
+    )
+};
+
+export default Navbar;

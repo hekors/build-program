@@ -22,7 +22,7 @@ const ProgramTimelineElement: React.FunctionComponent<ProgramTimelineElementType
             <Container className="program-timeline-element__header-layer-wrapper absolute 
                 flex flex-row items-stretch justify-start gap-4 -top-16 -left-10"
             >
-                {emoji && <WrappedContainer className="program-timeline-element__emoji-box bg-white p-4 rounded-xl border border-gray-200 shadow-md">
+                {emoji && <WrappedContainer className="program-timeline-element__emoji-box select-none cursor-default bg-white p-4 rounded-xl border border-gray-200 shadow-md">
                     <Image 
                         src={`/ios-emojis/${emoji}.svg`}
                         width="40"
@@ -33,7 +33,7 @@ const ProgramTimelineElement: React.FunctionComponent<ProgramTimelineElementType
                 </WrappedContainer>}
                 {displayURL && <Container className="program-timeline-element__link-display bg-gray-50 border border-gray-200 rounded-xl overflow-hidden w-fit pr-24 flex flex-row items-center justify-start gap-4">
                     <Container className="program-timeline-element__link-display__search-label-wrapper bg-gray-200 h-full flex flex-row items-center justify-center p-4">
-                        <Paragraph>{"look at"}</Paragraph>
+                        <Paragraph className="select-none cursor-default">{"look at"}</Paragraph>
                     </Container>
                     <Link href={displayURLPath}>
                         <Paragraph>{displayURL}</Paragraph>

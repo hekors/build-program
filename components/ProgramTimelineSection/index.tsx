@@ -3,10 +3,10 @@ import { SectionContainer } from "@/components/UIComponents/Container/SectionCon
 import ProgramTimelineData from "@/components/ProgramTimelineSection/ProgramTimelineData.json";
 import ProgramTimelineElement from "@/components/ProgramTimelineSection/ProgramTimelineElement";
 
-const ProgramTimelineSection: React.FunctionComponent = ({}) => {
+const ProgramTimelineSection: React.FunctionComponent = (props: any) => {
     const ProgramTimelineDataRef = useRef(ProgramTimelineData);
     return (
-        <SectionContainer id="program-timeline">
+        <SectionContainer id="program-timeline" {...props}>
             {ProgramTimelineDataRef.current?.map((timelineElement, timelineIndex: number) => {
                 return (
                     <ProgramTimelineElement
