@@ -7,7 +7,7 @@ const SectionContainer: React.FunctionComponent<GenericComponentType> = ({
     id
 }, props: any) => {
     return (
-        <div className="section-container py-16">
+        <section className="section-container py-16">
             <div
                 className={`section-content-container w- ${className || ""}`}
                 style={style}
@@ -16,7 +16,7 @@ const SectionContainer: React.FunctionComponent<GenericComponentType> = ({
             >
                 {children}
             </div>
-        </div>
+        </section>
     )
 };
 
