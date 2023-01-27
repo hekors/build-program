@@ -20,8 +20,8 @@
         "emoji": "dart-target",
         "headline": "Choose a track you want to apply for.",
         "description": "There are 2 tracks you can choose for - Full Stack Engineering Track & Designing Track (pref. UX/UI Design)",
-        "displayURL": "build-program.hekors.tech/apply#tracks",
-        "displayURLPath": "/apply#tracks",
+        "displayURL": "build-program.hekors.tech/#tracks",
+        "displayURLPath": "/#tracks",
         "timelineAction": [
             {
                 "children": "Checkout Tracks",
