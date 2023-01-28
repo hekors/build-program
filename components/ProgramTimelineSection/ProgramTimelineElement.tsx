@@ -6,6 +6,7 @@ import { WrappedContainer } from "../UIComponents/Container/WrappedContainer";
 import Headline from "../UIComponents/Typography/Headline";
 import Paragraph from "../UIComponents/Typography/Paragraph";
 import Link from "next/link";
+import { ButtonType } from "@/types/UIComponentTypes/button-type";
 
 const ProgramTimelineElement: React.FunctionComponent<ProgramTimelineElementType> = ({
     emoji,
@@ -44,10 +45,11 @@ const ProgramTimelineElement: React.FunctionComponent<ProgramTimelineElementType
                 <Headline className="text-6xl font-extrabold w-[18ch]">{headline}</Headline>
                 <Paragraph className="w-[56ch]">{description}</Paragraph>
                 {timelineAction && <WrappedContainer className="flex flex-row items-start justify-start gap-6">
-                    {timelineAction?.map((actionItem, actionIndex) => (
+                    {timelineAction?.map((actionItem: ButtonType, actionIndex) => (
                         <Button 
                             variant={actionItem?.variant} 
                             key={actionIndex} 
+                            link={actionItem?.link}
                             type={null}
                         >
                             {actionItem?.children}

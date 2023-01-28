@@ -25,7 +25,10 @@
         "timelineAction": [
             {
                 "children": "Checkout Tracks",
-                "variant": "solid"
+                "variant": "solid",
+                "link": {
+                    "path": "/#tracks"
+                }
             }
         ]
     },
