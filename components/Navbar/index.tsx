@@ -1,6 +1,5 @@
 import Container from "@/components/UIComponents/Container";
 import Image from "next/image";
-import { WrappedContainer } from "@/components/UIComponents/Container/WrappedContainer";
 import Paragraph from "@/components/UIComponents/Typography/Paragraph";
 import Link from "next/link";
 import NavbarData from '@/components/Navbar/NavbarData.json';
