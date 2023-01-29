@@ -5,6 +5,7 @@ import Paragraph from "@/components/UIComponents/Typography/Paragraph";
 import Image from "next/image";
 import Button from "@/components/UIComponents/Button";
 import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 
 const ProgramTrackCard: React.FunctionComponent<ProgramTrackCardType> = ({
     trackTitle,
@@ -13,7 +14,9 @@ const ProgramTrackCard: React.FunctionComponent<ProgramTrackCardType> = ({
     trackEmoji
 }, props: any) => {
     return (
-        <Container className="program-track-card bg-white overflow-hidden border border-gray-700" {...props}>
+        <Container className="program-track-card bg-white overflow-hidden border border-gray-700
+            transition-all hover:-translate-y-2
+        " {...props}>
             <Container className="program-track-card__header p-6 bg-gray-800 flex flex-row items-start justify-start gap-4">
                 <Image 
                     src={`/ios-emojis/${trackEmoji}.svg`}
@@ -33,10 +36,12 @@ const ProgramTrackCard: React.FunctionComponent<ProgramTrackCardType> = ({
                     {trackDescription}
                 </Paragraph>
                 <Container className="flex flex-row items-center justify-start gap-6 mt-6">
-                    <Button variant="solid" className="flex flex-row items-center justify-center gap-2 hover:gap-3 transition-all w-full" type={null}>
-                        {"Learn more"}{" "}
-                        <FaArrowRight />
-                    </Button>
+                    <Link href={trackApplyPage} className="w-full">
+                        <Button variant="solid" className="flex flex-row items-center justify-center gap-2 hover:gap-3 transition-all w-full" type={null}>
+                            {"Learn more"}{" "}
+                            <FaArrowRight />
+                        </Button>
+                    </Link>
                 </Container>
             </Container>
         </Container>

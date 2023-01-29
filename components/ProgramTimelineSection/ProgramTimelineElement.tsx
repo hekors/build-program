@@ -8,6 +8,10 @@ import Paragraph from "../UIComponents/Typography/Paragraph";
 import Link from "next/link";
 import { ButtonType } from "@/types/UIComponentTypes/button-type";
 
+
+import TracksData from '@/components/ProgramTrackSection/ProgramTrackData.json';
+import { useState } from "react";
+
 const ProgramTimelineElement: React.FunctionComponent<ProgramTimelineElementType> = ({
     emoji,
     headline,
@@ -16,6 +20,7 @@ const ProgramTimelineElement: React.FunctionComponent<ProgramTimelineElementType
     displayURLPath,
     timelineAction
 }) => {
+    const [selectedTrack, setSelectedTrack] = useState(TracksData[0]);
     return (
         <Container className="program-timeline-element pl-12 border-l border-gray-300 relative
             flex flex-col items-start justify-start"

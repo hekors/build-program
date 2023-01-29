@@ -6,7 +6,6 @@
 
 body, html {
     @apply bg-gray-100 font-mona-sans;
-    /* cursor: url("../public/ios-emojis/school-bag.svg"), default; */
 }
 
 .section-content-container {
@@ -14,6 +13,11 @@ body, html {
     @apply mx-auto;
 }
 
+#tracks {
+    cursor: url("../public/ios-emojis/school-bag.svg"), default;
+}
+
+/* Font Import */
 @font-face {
     font-family: "Mona Sans";
     src: url("../public/fonts/Mona-Sans.ttf");

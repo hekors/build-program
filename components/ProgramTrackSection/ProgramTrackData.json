@@ -1,14 +1,23 @@
 [
     {
+        "slugID": "full-stack-engineering-track",
         "trackTitle": "Full Stack Engineering",
         "trackDescription": "Build full-stack projects to improve your software engineering portfolio. Learn about core-engineering, design-based engineering, best principles, working in a team of builders.",
         "trackApplyPage": "/apply/full-stack-engineering-track",
         "trackEmoji": "laptop"
     },
     {
+        "slugID": "ux-ui-designing-track",
         "trackTitle": "UX/UI Designing",
         "trackDescription": "Work with creative designers across different regions. Build your portfolio as a creative and super awesome designer.",
         "trackApplyPage": "/apply/ux-ui-designing-track",
         "trackEmoji": "color-palette"
+    },
+    {
+        "slugID": "blockchain-engineering-track",
+        "trackTitle": "Blockchain Engineering",
+        "trackDescription": "",
+        "trackApplyPage": "/apply/blockchain-engineering-track",
+        "trackEmoji": "chain"
     }
 ]
