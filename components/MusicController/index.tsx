@@ -2,7 +2,7 @@ import { GenericComponentType } from "@/types/generic-type";
 import Button from "@/components/UIComponents/Button";
 import { useEffect, useState } from "react";
 
-import MusicData from '@/components/MusicController/music-data.json';
+import MusicData from '@/components/MusicController/MusicData.json';
 
 const MusicController: React.FunctionComponent<GenericComponentType> = ({
     style,

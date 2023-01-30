@@ -12,12 +12,5 @@
         "trackDescription": "Work with creative designers across different regions. Build your portfolio as a creative and super awesome designer.",
         "trackApplyPage": "/apply/ux-ui-designing-track",
         "trackEmoji": "color-palette"
-    },
-    {
-        "slugID": "blockchain-engineering-track",
-        "trackTitle": "Blockchain Engineering",
-        "trackDescription": "",
-        "trackApplyPage": "/apply/blockchain-engineering-track",
-        "trackEmoji": "chain"
     }
 ]

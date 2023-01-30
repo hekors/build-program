@@ -1,0 +1,37 @@
+[
+    {
+        "slugID": "full-stack-engineering-track",
+        "trackDisplayTitle": "Build Program teaches you to build and ship great products, with professional working experience.",
+        "trackDisplayDescription": "Attend Daily Standup Calls with team, Retrospective Sessions, Project Ideation Meetings, 101 Mentor Interactions and much more.",
+        "trackDailyRoutineTimeline": {
+            "workingDays": {
+                "startingWorkDay": "Monday",
+                "endingWorkDay": "Friday",
+                "flow": [
+                    {
+                        "slotTitle": "Daily Standup",
+                        "slotDescription": "Start your day by catching up with your team-mates and mentor, where you’ll be discussing project updates, blockages, share ideas and views, together.",
+                        "timestamp": "10:00AM"
+                    },
+                    {
+                        "slotTitle": "Project Features Discussion with Pair Programming",
+                        "timestamp": "11:00AM"
+                    },
+                    {
+                        "slotTitle": "Lunch Break, Free Time",
+                        "timestamp": "01:00PM"
+                    },
+                    {
+                        "slotTitle": "Coding time",
+                        "slotDescription": "After the break, you and your team-mates can start working on the project."
+                    },
+                    {
+                        "slotTitle": "Daily Code Review",
+                        "slotDescription": "Get your work reviewed by other team-members and your mentor. More like a day-wrap meeting, to place all the updates together, by sharing with each other.",
+                        "timestamp": "05:00PM"
+                    }
+                ]
+            }
+        }
+    }
+]
