@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import Headline from "@/components/UIComponents/Typography/Headline";
 import Paragraph from "@/components/UIComponents/Typography/Paragraph";
 import { WrappedContainer } from "@/components/UIComponents/Container/WrappedContainer";
+import Skeleton from 'react-loading-skeleton';
 
 const TrackDailyRoutine: React.FunctionComponent<TrackDailyRoutinePropType> = ({ trackSlugID }, props: any) => {
     const [trackDailyRoutineData, setTrackDailyRoutineData] = useState<TrackDailyRoutineType>(undefined);
@@ -24,20 +25,26 @@ const TrackDailyRoutine: React.FunctionComponent<TrackDailyRoutinePropType> = ({
         <SectionContainer className="track-daily-routine-section flex flex-row items-start justify-around" {...props}>
             <Container className="track-daily-routine-details-section flex flex-col items-start justify-start gap-6">
                 <Headline className="font-extrabold text-4xl text-gray-900 w-[26ch]">
-                    {trackDailyRoutineData?.trackDisplayTitle}
+                    {trackDailyRoutineData?.trackDisplayTitle || <Skeleton />}
                 </Headline>
                 <Paragraph className="text-base font-medium w-[42ch]">
-                    {trackDailyRoutineData?.trackDisplayDescription}
+                    {trackDailyRoutineData?.trackDisplayDescription || <Skeleton />}
                 </Paragraph>
-                <Container className="working-days-details-wrapper mt-6">
-                    <Headline className="font-semibold text-gray-900 text-lg">{"Working Days"}</Headline>
-                    <WrappedContainer>
-                        <Paragraph>
-                            {`From ${trackDailyRoutineData?.trackDailyRoutineTimeline?.workingDays?.startingWorkDay}, 
-                            To ${trackDailyRoutineData?.trackDailyRoutineTimeline?.workingDays?.endingWorkDay}`}
-                        </Paragraph>
-                    </WrappedContainer>
-                </Container>
+                {trackDailyRoutineData?.trackDailyRoutineTimeline?.workingDays?.startingWorkDay ? <Container className="working-days-details-wrapper mt-6">
+                            <Headline className="font-semibold text-gray-900 text-lg">{"Working Days"}</Headline>
+                            <WrappedContainer>
+                                <Paragraph>
+                                    {`From ${trackDailyRoutineData?.trackDailyRoutineTimeline?.workingDays?.startingWorkDay}, 
+                                    To ${trackDailyRoutineData?.trackDailyRoutineTimeline?.workingDays?.endingWorkDay}`}
+                                </Paragraph>
+                                
+                            </WrappedContainer>
+                        </Container>
+                    : <Container className="working-days-details-wrapper mt-6">
+                        <Headline className="font-semibold text-gray-900 text-lg">{"Working Days"}</Headline>
+                            <Skeleton />
+                    </Container>
+                }
             </Container>
             <Container className="track-daily-routine-timeline-flow-wrapper">
                 <Container className="track-daily-routine-timeline-flow-container flex flex-col items-start justify-start">
