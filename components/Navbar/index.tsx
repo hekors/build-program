@@ -7,9 +7,12 @@ import { useRef } from "react";
 import Button from "@/components/UIComponents/Button";
 import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa';
 
-const Navbar: React.FunctionComponent = () => {
-    const NavbarDataRef = useRef(NavbarData);
+type NavbarPropsType = {
+    isUserAuthorized: boolean;
+};
 
+const Navbar: React.FunctionComponent<NavbarPropsType> = ({ isUserAuthorized=false }) => {
+    const NavbarDataRef = useRef(NavbarData);
     return (
         <Container className="navbar bg-gray-900 py-12" id="navbar">
             <Container className="navbar-content-container section-content-container flex flex-row items-center justify-between">
@@ -30,20 +33,18 @@ const Navbar: React.FunctionComponent = () => {
                             <Paragraph className="hover:text-gray-400">{navbarOption?.title}</Paragraph>
                         </Link>
                     ))}
-                    <Button className="bg-white text-gray-900 hover:bg-gray-200">
-                        {"Apply for batches"}
-                    </Button>
-                </Container>
-                <Container className="flex flex-row items-center justify-end gap-6">
-                    {[
-                        { icon: <FaDiscord />, path: "https://discord.gg/AxRzNSQRu9" },
-                        { icon: <FaTwitter />, path: "https://twitter.com/hekorscommunity" },
-                        { icon: <FaGithub />, path: "https://github.com/hekors" }
-                    ]?.map((socialLink, socialLinkIndex) => (
-                        <Link href={socialLink?.path} key={socialLinkIndex} className="text-gray-500 text-xl hover:text-gray-400" target={"_blank"}>
-                            {socialLink?.icon}
+                    {isUserAuthorized
+                        ? <Link href={"/dashboard"}>
+                            <Button className="bg-white text-gray-900 hover:bg-gray-200">
+                                {"Dashboard"}
+                            </Button>
                         </Link>
-                    ))}
+                        : <Link href={"/join"}>
+                            <Button className="bg-white text-gray-900 hover:bg-gray-200">
+                                {"Join Build Program"}
+                            </Button>
+                        </Link>
+                    }
                 </Container>
             </Container>
         </Container>
