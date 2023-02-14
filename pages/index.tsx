@@ -1,6 +1,6 @@
-import HeroSection from "@/components/HeroSection";
-import ProgramTimelineSection from "@/components/ProgramTimelineSection";
-import ProgramTrackSection from "@/components/ProgramTrackSection";
+import HeroSection from '@/components/HeroSection';
+import ProgramTimelineSection from '@/components/ProgramTimelineSection';
+import ProgramTrackSection from '@/components/ProgramTrackSection';
 
 const LandingPage: React.FunctionComponent = () => {
   return (
@@ -9,7 +9,7 @@ const LandingPage: React.FunctionComponent = () => {
       <ProgramTimelineSection />
       <ProgramTrackSection />
     </main>
-  )
+  );
 };
 
 export default LandingPage;

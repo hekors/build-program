@@ -1,14 +1,14 @@
 [
-    {
-        "title": "See Tracks",
-        "path": "/#tracks"
-    },
-    {
-        "title": "Past Builders",
-        "path": "/builders"
-    },
-    {
-        "title": "Project Board",
-        "path": "https://github.com/orgs/hekors/repositories"
-    }
+  {
+    "title": "See Tracks",
+    "path": "/#tracks"
+  },
+  {
+    "title": "Past Builders",
+    "path": "/builders"
+  },
+  {
+    "title": "Project Board",
+    "path": "https://github.com/orgs/hekors/repositories"
+  }
 ]

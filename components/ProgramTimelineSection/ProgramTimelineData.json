@@ -1,51 +1,51 @@
 [
-    {
-        "emoji": "magnifying-glass",
-        "headline": "Start by applying for the upcoming batches.",
-        "description": "The Build Program happens twice a year - Both during Fall and Spring Season. We help you to build better projects and share professional experiences from various domains in tech/non-tech.",
-        "displayURL": "build-program.hekors.tech/apply",
-        "displayURLPath": "/apply",
-        "timelineAction": [
-            {
-                "children": "Apply for 2023 Fall Batch",
-                "variant": "solid"
-            },
-            {
-                "children": "See Upcoming Batches",
-                "variant": "text"
-            }
-        ]
-    },
-    {
-        "emoji": "dart-target",
-        "headline": "Choose a track you want to apply for.",
-        "description": "There are 2 tracks you can choose for - Full Stack Engineering Track & Designing Track (pref. UX/UI Design)",
-        "displayURL": "build-program.hekors.tech/#tracks",
-        "displayURLPath": "/#tracks",
-        "timelineAction": [
-            {
-                "children": "Checkout Tracks",
-                "variant": "solid",
-                "link": {
-                    "path": "/#tracks"
-                }
-            }
-        ]
-    },
-    {
-        "emoji": "smile",
-        "headline": "Listen to what past builders have to share.",
-        "description": "We select people who are creative in terms of engineering and design, who knows how to build and ship stuff in a team or without a team as a solo builder. If you're passionate like them, you're at the right place.",
-        "displayURL": "build-program.hekors.tech/builders",
-        "displayURLPath": "/builders",
-        "timelineAction": [
-            {
-                "children": "Listen to 2023 Builders Experience",
-                "variant": "solid"
-            },
-            {
-                "variant": "Listen to all Experiences"
-            }
-        ]
-    }
+  {
+    "emoji": "magnifying-glass",
+    "headline": "Start by applying for the upcoming batches.",
+    "description": "The Build Program happens twice a year - Both during Fall and Spring Season. We help you to build better projects and share professional experiences from various domains in tech/non-tech.",
+    "displayURL": "build-program.hekors.tech/apply",
+    "displayURLPath": "/apply",
+    "timelineAction": [
+      {
+        "children": "Apply for 2023 Fall Batch",
+        "variant": "solid"
+      },
+      {
+        "children": "See Upcoming Batches",
+        "variant": "text"
+      }
+    ]
+  },
+  {
+    "emoji": "dart-target",
+    "headline": "Choose a track you want to apply for.",
+    "description": "There are 2 tracks you can choose for - Full Stack Engineering Track & Designing Track (pref. UX/UI Design)",
+    "displayURL": "build-program.hekors.tech/#tracks",
+    "displayURLPath": "/#tracks",
+    "timelineAction": [
+      {
+        "children": "Checkout Tracks",
+        "variant": "solid",
+        "link": {
+          "path": "/#tracks"
+        }
+      }
+    ]
+  },
+  {
+    "emoji": "smile",
+    "headline": "Listen to what past builders have to share.",
+    "description": "We select people who are creative in terms of engineering and design, who knows how to build and ship stuff in a team or without a team as a solo builder. If you're passionate like them, you're at the right place.",
+    "displayURL": "build-program.hekors.tech/builders",
+    "displayURLPath": "/builders",
+    "timelineAction": [
+      {
+        "children": "Listen to 2023 Builders Experience",
+        "variant": "solid"
+      },
+      {
+        "variant": "Listen to all Experiences"
+      }
+    ]
+  }
 ]
